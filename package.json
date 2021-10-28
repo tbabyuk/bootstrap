@@ -8,6 +8,10 @@
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbabyuk/git-test.git"
+  },
   "author": "Terry Babyuk",
   "license": "ISC",
   "devDependencies": {
