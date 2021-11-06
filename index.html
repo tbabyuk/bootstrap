@@ -23,7 +23,7 @@
 <body>
 
     <header class="jumbotron jumbotron-fluid">
-        <!--container-->
+
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3, col-md-2 align-self-center">
@@ -32,7 +32,7 @@
 
                 <div class="col">
                     <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
+                    <h2 class="text-nowrap">a better way to camp</h2>
                 </div>
 
                 <div class="col-md-4 col-xl-2 align-self-center">
@@ -40,7 +40,8 @@
                 </div>
             </div>
         </div><!--/container-->
-    </header>
+
+    </header><!--/jumbotron-->
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <!--container-->
@@ -116,20 +117,24 @@
 
             </div><!--/row-->
 
-            <div class="row row-content">
-                
+
+            <!-- RESERVE A CAMPSITE ROW -->
+
+            <div class="row row-content align-items-center">
+                <!--form col-->
                 <div class="col col-sm-6 mx-auto">
+
                     <div class="card">
                         <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                         <div class="card-body">
                             <form id="reserveForm">
                                 <div class="row form-group">
-
-                                    <label class="col-12 col-sm-6 col-form-label" for="numCampers">
+                                    
+                                    <label class="col-sm-6 col-form-label" for="numCampers">
                                         Number of Campers
                                     </label>
 
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-sm-6">
                                         <select class="form-control" name="numCampers" id="numCampers">
                                             <option value="">Select</option>
                                             <option value="1">1</option>
@@ -144,11 +149,11 @@
 
                                 <div class="row form-group">
 
-                                    <label class="col-12 col-sm-6 col-form-label" for="date">
+                                    <label class="col-sm-6 col-form-label" for="date">
                                         Date
                                     </label>
 
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-sm-6">
                                         <input class="form-control" type="date" name="date" id="date" placeholder="">
                                     </div>
                                 </div><!--row-->
@@ -163,7 +168,8 @@
                         </div>
 
                     </div>
-                </div><!--main col-->
+
+                </div><!--form col -->
 
             </div><!--/row-->
 
