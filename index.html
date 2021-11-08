@@ -59,9 +59,71 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
+
+                <!--login button -->
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i>Login
+                    </a>
+                </span><!--/login button-->
+
             </div>
         </div><!--/container-->
     </nav>
+
+        <!-- Modal pasted from Bootstrap 4.5 docs. Rework this to make the modal above work properly -->
+        
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <!--modal header-->
+                    <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+        
+                    <!--modal body-->
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-12 form-group">
+                                        <label class="sr-only" for="loginEmail">Email Address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                    </div>
+        
+                                    <div class="col-12 form-group">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="rememberMe" type="checkbox">
+                                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                </div> -->
+                            </form>
+                        </div>
+                    </div>
+        
+                    <!--modal footer (I used the footer class to include the buttons, instead of using a form-row like in the Nucamp tutorial)-->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+                    </div>
+                </div><!--modal content-->
+            </div><!--modal dialog-->
+        </div><!--/modal-->
+
 
         <!--container-->
         <div class="container">
